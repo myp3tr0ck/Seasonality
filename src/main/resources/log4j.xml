@@ -13,7 +13,7 @@
     </appender>
     
     <appender name="util" class="org.apache.log4j.FileAppender">
-        <param name="file" value="c:/tmp/CacheTopology.log" />
+        <param name="file" value="c:/tmp/CacheTopology2.log" />
         <param name="append" value="true" />
         <layout class="org.apache.log4j.PatternLayout">
           <param name="ConversionPattern" value="%t %-5p %c{2} - %m%n"/>
@@ -27,7 +27,7 @@
            all log messages will be logged to the appender "stdout", unless defined otherwise
        -->
         <level value="debug" />
-        <appender-ref ref="stdout" />
+<!--         <appender-ref ref="stdout" /> -->
         <appender-ref ref="util" />
     </root>
 </log4j:configuration>
